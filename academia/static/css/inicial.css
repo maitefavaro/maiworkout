@@ -1,8 +1,30 @@
-body{
-    background: #B3B3B3;
+*{
+    background: #3B3B3A;
     margin: 0;
     padding: 0;
 }
+
+
 .pg_toda{
     margin: 0 10px;
+    clear:both;
 }
+
+
+.praticar{
+    color: white;
+}
+
+
+.um{
+    position: relative;
+    top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+
+.praticar2{
+    color: white;
+}
+
