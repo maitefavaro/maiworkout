@@ -1,0 +1,68 @@
+*{
+    background-color: #3B3B3A;
+}
+
+.logo_img{
+    width: 150px;
+    position: absolute;
+}
+
+.tela_toda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.cadastro{
+    background-color: #8534be;
+    height: 50px;
+    width: 300px;
+    border-radius: 15px;
+    border: none;
+    font-style: italic;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.logaaar{
+    background-color: #8534be;
+    height: 50px;
+    width: 300px;
+    border-radius: 15px;
+    border: none;
+    font-style: italic;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.nome{
+    height: 50px;
+    width: 300px;
+    border-radius: 15px; 
+    border: none;
+    border-bottom: 2px solid #8534be; 
+    text-align: left;
+}
+
+.senha{
+    height: 50px;
+    width: 300px;  
+    border-radius: 15px;
+    border: none;
+    border-bottom: 2px solid #8534be;
+    text-align: left;
+}
+
+.telainicial{
+    background-color: #8534be;
+    height: 50px;
+    width: 300px;
+    border-radius: 15px;
+    border: none;
+    font-style: italic;
+    color: white;
+    letter-spacing: 1px;
+    
+}

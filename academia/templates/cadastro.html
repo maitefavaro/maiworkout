@@ -1,24 +1,32 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/cadastro.css' %}">
 <html>
     <head>
 
     </head>
 
     <body>
-        <form action="{% url 'cadastro' %}" method="post"> 
-            {% csrf_token %}
-            <input type="text" placeholder="Username" name="username">
-            <br>
-            <br>
-            <input type="email" placeholder="Email" name="email">
-            <br>
-            <br>
-            <input type="password" placeholder="Password" name="password">
-            <br>
-            <br>
-            <input type="submit" value="cadastrar">
-            <br>
+        <img class="logo_img" src="{% static 'img/mw.png' %}" alt="">
+        <div class="tela_toda">
+            
+            <form action="{% url 'cadastro' %}" method="post"> 
+                {% csrf_token %}
+                <input class="nome" type="text" placeholder="Nome" name="username">
+                <br>
+                <br>
+                <input class="email" type="email" placeholder="Email" name="email">
+                <br>
+                <br>
+                <input class="senha" type="password" placeholder="Senha" name="password">
+                <br>
+                <br>
+                <input class="cadastrar" type="submit" value="Cadastrar">
+                <br>
 
-        </form>
+            </form>
+            <a href="{% url 'index' %}"><button class="telainicial">Tela inicial</button></a>
+
+        </div>
         
     </body>
 </html>

@@ -14,7 +14,7 @@
             <img src="{% static 'img/mw.png' %}" alt="">
         </div>
         <div>
-            <button class="login">Login</button>
+            <a href="{% url 'login' %}"><button class="login">Login</button></a>
         </div>
     </div>
 
@@ -22,7 +22,17 @@
     {% block content %}
 
     {% endblock %}
-
+    <div class="footerr">
+        <div class="logomw">
+            <img src="" alt="">
+        </div>
+        <div>
+            <h1 style="color: white;">
+                Footer
+            </h1>
+            <button class=""></button>
+        </div>
+    </div>
     <!-- footer -->
 </body>
 </html>

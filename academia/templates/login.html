@@ -1,21 +1,29 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
 <html>
     <head>
 
     </head>
 
     <body>
-        <form action="{% url 'login' %}" method="post"> 
-            {% csrf_token %}
-            <input type="text" placeholder="Username" name="username">
+        <img class="logo_img" src="{% static 'img/mw.png' %}" alt="">
+        <div class="tela_toda">
+            <form class="" action="{% url 'login' %}" method="post"> 
+                {% csrf_token %}
+                <input class="nome" type="text" placeholder="Nome do usuário" name="username">
+                <br>
+                <br>
+                <input class="senha" type="password" placeholder="Senha" name="password">
+                <br>
+                <br>
+                <input class="logaaar" type="submit" value="Entrar">
+                <br>
+                
+            </form>
+            <a href="{% url 'cadastro' %}"><button class="cadastro">Não possui uma conta? Faça seu cadastro</button></a>
             <br>
-            <br>
-            <input type="password" placeholder="Password" name="password">
-            <br>
-            <br>
-            <input type="submit" value="logar">
-            <br>
+            <a href="{% url 'index' %}"><button class="telainicial">Tela inicial</button></a>
+        </div>
 
-        </form>
-        
     </body>
 </html>
