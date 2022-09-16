@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
+from django.contrib import auth
 
 # Create your views here.
 
@@ -35,10 +36,13 @@ def login(request):
         username = request.POST.get('username')
         password = request.POST.get('password')
 
-        user = authenticate(username=username, password=password)
+        user = auth.authenticate(username=username, password=password)
 
         if user:
-            login(request, user)
-            return HttpResponse('Autenticado')
+            return redirect('treino')
         else:
             return HttpResponse('Email ou senha inválidos')
+
+
+def treino(request):
+    return render(request, 'treino.html')
