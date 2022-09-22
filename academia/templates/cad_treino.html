@@ -1,0 +1,52 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/cad_treino.css' %}">
+
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <div class="inicio">
+            <h1>Olá <a class="nome">{{request.user}}</a>!</h1>
+            <h2>Vamos fazer um projetinho?</h2>
+        </div>
+        <div class="tela_toda">
+            <form class="id_treino">
+                <input type="radio" id="a" name="id_treino" value="A">
+                <label for="a">A</label><br/>
+                <input type="radio" id="b" name="id_treino" value="B">
+                <label for="b">B</label><br/>
+                <input type="radio" id="c" name="id_treino" value="C">
+                <label for="c">C</label><br/>
+                <input type="radio" id="d" name="id_treino" value="D">
+                <label for="d">D</label>
+            </form>
+
+            <form class="formm" action="{% url 'cad_treino' %}" method="post"> 
+                {% csrf_token %}
+                <input class="exercicio" type="text" placeholder="Exercício" name="exercicio">
+                <br>
+                <br>
+                <input class="serie" type="number" placeholder="Série" name="serie">
+                <br>
+                <br>
+                <input class="vezes_repeticoes" type="number" placeholder="Repetições " name="vezes_repeticoes">
+                <br>
+                <br>
+                <input class="pausa" type="number" placeholder="Pausa" name="pausa">
+                <br>
+                <br>
+                <input class="carga" type="number" placeholder="Carga" name="carga">
+                <br>
+
+            </form>
+            <a href="{% url 'treino' %}"><button class="btnn">Visualizar seu treino</button></a>
+
+        </div>
+
+    </body>
+
+</html>

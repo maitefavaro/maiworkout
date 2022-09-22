@@ -1,0 +1,81 @@
+*{
+    background-color: #3B3B3A;
+}
+
+.inicio{
+    color: aliceblue;
+    text-align: center;
+}
+
+
+.tela_toda{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.id_treino{
+    color: aliceblue;
+}
+
+
+.formm{
+    display: flex;
+
+}
+
+.formm input{
+    margin-left: 15px;
+}
+.exercicio{
+    height: 50px;
+    width: 300px;
+    border-radius: 15px; 
+    border: none;
+    border-bottom: 2px solid #8534be; 
+    text-align: left;
+}
+.serie{
+    height: 50px;
+    width: 150px;
+    border-radius: 15px; 
+    border: none;
+    border-bottom: 2px solid #8534be; 
+    text-align: left;
+}
+.vezes_repeticoes{
+    height: 50px;
+    width: 150px;
+    border-radius: 15px; 
+    border: none;
+    border-bottom: 2px solid #8534be; 
+    text-align: left;
+}
+.pausa{
+    height: 50px;
+    width: 150px;
+    border-radius: 15px; 
+    border: none;
+    border-bottom: 2px solid #8534be; 
+    text-align: left;
+}
+.carga{
+    height: 50px;
+    width: 150px;
+    border-radius: 15px; 
+    border: none;
+    border-bottom: 2px solid #8534be; 
+    text-align: left;
+}
+
+.btnn{
+    background-color: #8534be;
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    border: none;
+    font-style: italic;
+    color: white;
+    letter-spacing: 1px;
+}
+

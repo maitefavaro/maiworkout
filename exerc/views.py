@@ -39,6 +39,7 @@ def login(request):
         user = auth.authenticate(username=username, password=password)
 
         if user:
+            auth.login(request, user)
             return redirect('treino')
         else:
             return HttpResponse('Email ou senha inválidos')
@@ -46,3 +47,8 @@ def login(request):
 
 def treino(request):
     return render(request, 'treino.html')
+
+
+
+def cad_treino(request):
+    return render(request, 'cad_treino.html')
