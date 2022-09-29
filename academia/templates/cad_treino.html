@@ -15,17 +15,6 @@
         </div>
 
         <div class="tela_toda">
-            <form class="id_treino">
-                <input type="radio" id="a" name="id_treino" value="A">
-                <label for="a">A</label><br/>
-                <input type="radio" id="b" name="id_treino" value="B">
-                <label for="b">B</label><br/>
-                <input type="radio" id="c" name="id_treino" value="C">
-                <label for="c">C</label><br/>
-                <input type="radio" id="d" name="id_treino" value="D">
-                <label for="d">D</label>
-            </form>
-
             <form class="formm" action="{% url 'cad_treino' %}" method="post"> 
                 {% csrf_token %}
                 <input class="exercicio" type="text" placeholder="Exercício" name="exercicio">
@@ -37,7 +26,7 @@
                 <input class="vezes_repeticoes" type="number" placeholder="Repetições " name="vezes_repeticoes">
                 <br>
                 <br>
-                <input class="pausa" type="number" placeholder="Pausa" name="pausa">
+                <input class="pausa" type="time" step='1' min="00:00:00" max="20:00:00" placeholder="Pausa" name="pausa" id="time">
                 <br>
                 <br>
                 <input class="carga" type="number" placeholder="Carga" name="carga">

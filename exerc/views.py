@@ -52,3 +52,7 @@ def treino(request):
 
 def cad_treino(request):
     return render(request, 'cad_treino.html')
+
+
+def qtd_treino(request):
+    return render(request, 'qtd.html')

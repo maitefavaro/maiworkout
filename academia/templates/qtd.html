@@ -1,0 +1,46 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/qtd.css' %}">
+
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <div class="inicio">
+                <h1>Olá @<a class="nome">{{request.user}}</a>!</h1>
+                <h2>Vamos fazer um projetinho?</h2>
+        </div>
+
+        <div class="tela_toda">
+            <div class="seila">
+                <div class="firstBlock">
+                    <p>Quantos exercícios você adicionará hoje?</p>
+                    <form action="" class="qtd_exerc">
+                        <input class="qtd_exerc" type="number" id="qtd_exerc" >
+                    </form>
+                </div>
+
+                <div class="secBlock">
+                    <p class="treinex">E em qual treino?</p>
+                    <div class="inputs">
+                        <input type="radio" id="a" name="id_treino" value="A">
+                        <label for="a">A</label><br/>
+                        <input type="radio" id="b" name="id_treino" value="B">
+                        <label for="b">B</label><br/>
+                        <input type="radio" id="c" name="id_treino" value="C">
+                        <label for="c">C</label><br/>
+                        <input type="radio" id="d" name="id_treino" value="D">
+                        <label for="d">D</label>
+                    </div>
+                </div>
+            </div>
+            <a href="{% url 'cad_treino' %}"><button class="btnn">Cadastrar treino</button></a>
+
+        </div>
+
+    </body>
+
+</html>
