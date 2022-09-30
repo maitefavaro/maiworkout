@@ -7,6 +7,10 @@
     position: absolute;
 }
 
+*:focus {
+    outline: none;
+}
+
 .tela_toda{
     display: flex;
     justify-content: center;

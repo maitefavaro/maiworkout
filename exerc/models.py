@@ -9,6 +9,7 @@ class Treino(models.Model):
     email = models.EmailField()
 
 
+
 class Treino_pessoa(models.Model):
     exercicio = models.CharField(max_length=225)
     repeticoes = models.PositiveIntegerField()

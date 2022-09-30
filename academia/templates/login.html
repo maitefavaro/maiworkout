@@ -8,6 +8,16 @@
     <body>
         <img class="logo_img" src="{% static 'img/mw.png' %}" alt="">
         <div class="tela_toda">
+            {% if messages %}
+            <ul class="msgs">
+                {% for message in messages %}
+                {% if message.tags%}
+                    <!-- <li   class="{{ message.tags }}" >{{ message }}</li> -->
+                    <p class="{{ message.tags }}" >{{ message }}</p>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            {% endif %}
             <form class="" action="{% url 'login' %}" method="post"> 
                 {% csrf_token %}
                 <input class="nome" type="text" placeholder="Nome do usuário" name="username">

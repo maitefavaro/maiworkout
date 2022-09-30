@@ -2,6 +2,10 @@
     background-color: #3B3B3A;
 }
 
+*:focus {
+    outline: none;
+}
+
 .logo_img{
     width: 150px;
     position: absolute;
@@ -65,4 +69,21 @@
     color: white;
     letter-spacing: 1px;
     
+}
+
+
+.msgs{
+    color: rgb(192, 64, 64);
+    font-style: italic;
+    padding: 0 auto;
+}
+
+.nome{
+    color: aliceblue;
+    font-style: italic
+}
+
+.senha{
+    color: aliceblue;
+    font-style: italic;
 }

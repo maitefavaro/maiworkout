@@ -25,6 +25,7 @@ input{
     justify-content: space-between;
     height: 100%;
     align-items: center;
+    
 }
 
 
@@ -96,7 +97,7 @@ input{
 }
 
 #time::before{
-    content: 'Time:';
+    content: 'Pausa:';
     margin-right: .6em;
     color: #000000;
 }
@@ -113,3 +114,14 @@ input[type="checkbox"]:radio{
     outline: none;
 }
 
+
+.cadastrar{
+    background-color: #8534be;
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    border: none;
+    font-style: italic;
+    color: white;
+    letter-spacing: 1px;
+}
