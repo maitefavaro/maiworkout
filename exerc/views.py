@@ -43,7 +43,7 @@ def login(request):
         if user:
             auth.login(request, user)
             return redirect('treino')
-        else:
+        else:   
             messages.info(request ,'Email ou senha inválidos')
             return render(request, 'login.html')
 
@@ -58,6 +58,7 @@ def cad_treino(request):
         return render(request, 'cad_treino.html')
 
     else:
+        treino = request.POST.get('treino')
         exercicio = request.POST.get('exercicio')
         serie = request.POST.get('serie')
         vezes_repeticoes = request.POST.get('vezes_repeticoes')
@@ -78,5 +79,10 @@ def cad_treino(request):
     
 
 
-def qtd_treino(request):
-    return render(request, 'qtd.html')
+def qtd_treino(request,qtd_exercicios):
+
+    context = {
+        "qtd_exercicios":qtd_exercicios,
+    }
+
+    return render(request, 'qtd.html',context)
