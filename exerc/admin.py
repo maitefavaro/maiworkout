@@ -3,7 +3,7 @@ from .models import *
 
 admin.site.register(Treino)
 admin.site.register(Pessoa)
-admin.site.register(Treino_pessoa)
+admin.site.register(Exercicio)
 
 
 # Register your models here.

@@ -37,52 +37,6 @@
 
             </form>
         </div>
-        <div class="tela_toda">
-            <div>
-            <form class="formm" action="{% url 'cad_treino' %}" method="post"> 
-                {% csrf_token %}
-                <input class="exercicio" type="text" placeholder="Exercício" name="exercicio">
-                <br>
-                <br>
-                <input class="serie" type="number" placeholder="Série" name="serie">
-                <br>
-                <br>
-                <input class="vezes_repeticoes" type="number" placeholder="Repetições " name="vezes_repeticoes">
-                <br>
-                <br>
-                <input class="pausa" type="time" step='1' min="00:00:00" max="20:00:00" placeholder="Pausa" name="pausa" id="time">
-                <br>
-                <br>
-                <input class="carga" type="number" placeholder="Carga" name="carga">
-                <br>
-                <br>
-                <input class="cadastrar" type="submit" value="Cadastrar">
-
-            </form>
-        </div>
-        <div class="tela_toda">
-            <div>
-            <form class="formm" action="{% url 'cad_treino' %}" method="post"> 
-                {% csrf_token %}
-                <input class="exercicio" type="text" placeholder="Exercício" name="exercicio">
-                <br>
-                <br>
-                <input class="serie" type="number" placeholder="Série" name="serie">
-                <br>
-                <br>
-                <input class="vezes_repeticoes" type="number" placeholder="Repetições " name="vezes_repeticoes">
-                <br>
-                <br>
-                <input class="pausa" type="time" step='1' min="00:00:00" max="20:00:00" placeholder="Pausa" name="pausa" id="time">
-                <br>
-                <br>
-                <input class="carga" type="number" placeholder="Carga" name="carga">
-                <br>
-                <br>
-                <input class="cadastrar" type="submit" value="Cadastrar">
-
-            </form>
-        </div>
             
             <a href="{% url 'treino' %}"><button class="btnn">Visualizar seu treino</button></a>
 

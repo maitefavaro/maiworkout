@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
 from django.contrib import auth, messages
-from exerc.models import Treino_pessoa
+from exerc.models import Exercicio
 
 
 # Create your views here.
@@ -29,6 +29,7 @@ def cadastro(request):
         user.save()
 
         messages.info(request ,'Usuário cadastrado com sucesso')
+        return redirect('login')
 
 
 def login(request):
@@ -66,7 +67,7 @@ def cad_treino(request):
         carga = request.POST.get('carga')
 
 
-        treino = Treino_pessoa.objects.create(
+        treino = Exercicio.objects.create(
             exercicio = exercicio,
             serie = serie,
             vezes_repeticoes = vezes_repeticoes,
