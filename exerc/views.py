@@ -45,7 +45,7 @@ def login(request):
             auth.login(request, user)
             return redirect('treino')
         else:   
-            messages.info(request ,'Email ou senha inválidos')
+            messages.info(request ,'Nome ou senha inválidos')
             return render(request, 'login.html')
 
 

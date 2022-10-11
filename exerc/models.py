@@ -3,14 +3,14 @@ from django.db import models
 
 # Create your models here.
 
-
-
-
-
 class Pessoa(models.Model):
     nome = models.CharField(max_length=100)
     data_nascimento = models.DateField()
     email = models.EmailField()
+    senha1 = models.CharField(max_length=100,verbose_name="Senha")
+    senha2 = models.CharField(max_length=100,verbose_name="Confirma sua Senha")
+    peso = models.DecimalField(max_digits=5, decimal_places=2,verbose_name="Peso")
+    altura = models.DecimalField(max_digits=5, decimal_places=2,verbose_name="Altura")
 
     def __str__(self):
         return self.nome
@@ -24,11 +24,6 @@ class Treino(models.Model):
 
     def __str__(self):
         return str(self.nome_Treino)+" - " + str(self.pessoa)
-
-
-
-
-    
 
 
 
