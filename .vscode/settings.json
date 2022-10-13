@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/d5872a3e-1f2b-4dd8-a00f-950184638eba/AppServices/subscriptions/d5872a3e-1f2b-4dd8-a00f-950184638eba/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/maiworkout",
+    "appService.deploySubpath": "."
+}
