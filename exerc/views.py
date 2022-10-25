@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth.models import User
+#from .models import Pessoa
 from django.contrib.auth import authenticate, login
 from django.contrib import auth, messages
 from exerc.models import Exercicio
@@ -18,14 +19,18 @@ def cadastro(request):
     else:
         username = request.POST.get('username') 
         email = request.POST.get('email') 
-        password = request.POST.get('password') 
+        dt_nascimento = request.POST.get('dt_nascmento')
+        peso = request.POST.get('peso') 
+        altura = request.POST.get('altura')
+        senha1 = request.POST.get('senha1') 
+        senha2 = request.POST.get('senha2') 
         
         user = User.objects.filter(username=username).first()
 
         if user:
             messages.info(request ,'Usuário já existente')
         
-        user = User.objects.create_user(username=username, email=email, password=password)
+        user = User.objects.create(username=username, email=email, password=senha1, altura=altura, peso=peso, data_nascimento=dt_nascimento)
         user.save()
 
         messages.info(request ,'Usuário cadastrado com sucesso')

@@ -21,7 +21,7 @@
 
 .nome{
     height: 50px;
-    width: 300px;
+    width: 400px;
     border-radius: 15px; 
     border: none;
     border-bottom: 2px solid #8534be; 
@@ -29,9 +29,67 @@
     color: white;
 }
 
-.senha{
+.senha1{
     height: 50px;
-    width: 300px;  
+    width: 400px;  
+    border-radius: 15px;
+    border: none;
+    border-bottom: 2px solid #8534be;
+    text-align: left;
+    color: white;
+}
+
+.senha2{
+    height: 50px;
+    width: 400px;  
+    border-radius: 15px;
+    border: none;
+    border-bottom: 2px solid #8534be;
+    text-align: left;
+    color: white;
+}
+
+.dt_nascimento{
+    height: 50px;
+    width: 400px;  
+    border-radius: 15px;
+    border: none;
+    border-bottom: 2px solid #8534be;
+    text-align: left;
+    color: #6d6c6d; 
+
+    
+}
+
+/* .dt_nascimento:valid{
+    color: green;
+}
+
+.dt_nascimento:invalid{
+    color: red;
+} */
+
+/* .dt_nascimento:valid{
+    color: white;
+} */
+
+/* ::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+::-webkit-datetime-edit-month-field { color: blue; }
+::-webkit-datetime-edit-month-field::placeholder { color: rgb(129, 129, 211); }
+::-webkit-datetime-edit-day-field { color: green; } */
+
+
+
+::placeholder{
+    color: #6d6c6d;
+}
+
+
+
+
+.peso{
+    height: 50px;
+    width: 400px;  
     border-radius: 15px;
     border: none;
     border-bottom: 2px solid #8534be;
@@ -41,7 +99,17 @@
 
 .email{
     height: 50px;
-    width: 300px;  
+    width: 400px;  
+    border-radius: 15px;
+    border: none;
+    border-bottom: 2px solid #8534be;
+    text-align: left;
+    color: white;
+}
+
+.altura{
+    height: 50px;
+    width: 400px;  
     border-radius: 15px;
     border: none;
     border-bottom: 2px solid #8534be;
@@ -52,7 +120,7 @@
 .cadastrar{
     background-color: #8534be;
     height: 50px;
-    width: 300px;
+    width: 400px;
     border-radius: 15px;
     border: none;
     font-style: italic;
