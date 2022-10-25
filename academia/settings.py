@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-2z193q21_)ownix3)y5y%l1f(crk@-d26uehx#(m^=hy5p!nkh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '*'
+]
 
 
 # Application definition
@@ -49,7 +51,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
+
+CSRF_TRUSTED_ORIGINS = ['https://maiworkout.azurewebsites.net']
 
 ROOT_URLCONF = 'academia.urls'
 
